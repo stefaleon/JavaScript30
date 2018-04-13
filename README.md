@@ -26,3 +26,13 @@
 * transition
 * setInterval
 * Date
+
+
+&nbsp;
+### 03 - CSS Variables
+
+* inputs with range and color types 
+* declare CSS variables on the root (or other) element
+* use them on various elements
+* dataset -> contains the data-attributes (e.g. displays the data-sizing)
+* set the documentElement's specific properties (defined by the name attribute) with setProperty which takes the variables as parameters   
