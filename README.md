@@ -15,3 +15,14 @@
 * use of CSS transitionend instead of setting timers (JS setTimeout)
 * the "this" object in functions called by event listeners is the object on which the listener has been called against
 * hoisting issues with ES6
+
+
+
+
+&nbsp;
+### 02 - JS and CSS Clock
+
+* transform
+* transition
+* setInterval
+* Date
