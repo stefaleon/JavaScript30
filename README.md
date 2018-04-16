@@ -75,6 +75,17 @@
 * every
 * find
 * findIndex
-* make new array with removed item with slice
+* remove item with slice, make new array 
 * ...spread
-* mutate the original array and remove item with splice
+* remove item with splice, mutate the original array
+
+
+
+&nbsp;
+### 08 - Fun with HTML5 Canvas
+
+* canvas
+* context
+* mouse events
+
+
