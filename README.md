@@ -65,3 +65,16 @@
 * return various data fields that match
 * map through results
 * replace string parts
+
+
+
+&nbsp;
+### 07 - Array Cardio Day 2
+
+* some
+* every
+* find
+* findIndex
+* make new array with removed item with slice
+* ...spread
+* mutate the original array and remove item with splice

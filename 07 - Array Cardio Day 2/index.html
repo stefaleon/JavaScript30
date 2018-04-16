@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Array Cardio 💪💪</title>
+</head>
+<body>
+  <p><em>Psst: have a look at the JavaScript Console</em> 💁</p>
+  <script>
+    // ## Array Cardio Day 2
+
+    const people = [
+      { name: 'Wes', year: 1988 },
+      { name: 'Kait', year: 1986 },
+      { name: 'Irv', year: 1970 },
+      { name: 'Lux', year: 2015 }
+    ];
+
+    const comments = [
+      { text: 'Love this!', id: 523423 },
+      { text: 'Super good', id: 823423 },
+      { text: 'You are the best', id: 2039842 },
+      { text: 'Ramen is my fav food ever', id: 123523 },
+      { text: 'Nice Nice Nice!', id: 542328 }
+    ];
+
+    // Some and Every Checks
+    // Array.prototype.some() // is at least one person 19 or older?
+    // Array.prototype.every() // is everyone 19 or older?
+
+    //The some() method tests whether at least one element in the array passes the test implemented by the provided function.    
+    const now = new Date(); // date now
+    const yearNow = now.getFullYear(); 
+    const some19 = people.some(p => yearNow - p.year >= 19);
+    console.log('there are some people over 18:', some19); // returns true
+
+    //The every() method tests whether all elements in the array pass the test implemented by the provided function.
+    const every19 = people.every(p => yearNow - p.year >= 19);
+    console.log('they are all over 18:', every19); // returns false (until 2034, Lux is too young)
+
+
+
+    // Array.prototype.find()
+    // Find is like filter, but instead returns just the one you are looking for
+    // find the comment with the ID of 823423
+
+    // The find() method returns the value of the first element in the array that satisfies the provided testing function. Otherwise undefined is returned.
+    
+    const comment823423 =  comments.find(c => c.id === 823423);
+    console.log('found comment: 823423', comment823423);
+
+    
+    // Array.prototype.findIndex()
+    // Find the comment with this ID
+    // delete the comment with the ID of 823423
+
+    // The findIndex() method returns the index of the first element in the array that satisfies the provided testing function. Otherwise -1 is returned.
+    const comment100000Index = comments.findIndex(c => c.id === 100000);
+    console.log('found comment100000 index:', comment100000Index);  // -1, doesn't exist
+    const comment823423Index = comments.findIndex(c => c.id === 823423);
+    console.log('found comment823423 index:', comment823423Index);  // 1
+    const comment542328Index = comments.findIndex(c => c.id === 542328);
+    console.log('found comment542328 index:', comment542328Index);  // 4
+    
+    // new array with slice, 823423 removed, original array not mutated
+    // The slice() method returns a shallow copy of a portion of an array into a new array object selected from begin to end (end not included). The original array will not be modified.
+    const slicedComments = [
+      ...comments.slice(0, comment823423Index), // use the spread operator ... in order to spread
+      ...comments.slice(comment823423Index + 1)  // the intermediate array contents into the resulting array 
+    ];
+    console.log('slicedComments array is:');
+    console.table(slicedComments); // new array does not contain 823423
+    
+    console.log('the comments array is:');
+    console.table(comments); // unchanged
+
+    console.log('splice code has been commented out');
+    //commented out splice to keep the original array
+     
+    // // The splice() method changes the contents of an array by removing existing elements and/or adding new elements.
+    // comments.splice(comment823423Index, 1);
+    // console.table(comments); // 823423 gone
+
+  </script>
+</body>
+</html>
