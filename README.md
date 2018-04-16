@@ -45,3 +45,12 @@
 * map
 * sort
 * reduce
+
+
+
+&nbsp;
+### 05 - Flex Panel Gallery
+
+* flexbox
+* transition effects
+* classList.toggle
