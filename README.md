@@ -54,3 +54,14 @@
 * flexbox
 * transition effects
 * classList.toggle
+
+
+
+&nbsp;
+### 06 - Type Ahead
+
+* fetch
+* RegExp
+* return various data fields that match
+* map through results
+* replace string parts
