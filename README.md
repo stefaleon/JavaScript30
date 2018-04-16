@@ -89,3 +89,9 @@
 * mouse events
 
 
+&nbsp;
+### 09 - Dev Tools Domination
+
+* break on
+* console various logs
+* console assert, dir, count, time, table
