@@ -75,7 +75,7 @@
 * every
 * find
 * findIndex
-* remove item with slice, make new array 
+* remove item with slice, make new array
 * ...spread
 * remove item with splice, mutate the original array
 
@@ -95,3 +95,10 @@
 * break on
 * console various logs
 * console assert, dir, count, time, table
+
+
+
+&nbsp;
+### 10 - Hold Shift and Check Checkboxes
+
+* using flag variables in event handler callbacks
