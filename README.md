@@ -102,3 +102,17 @@
 ### 10 - Hold Shift and Check Checkboxes
 
 * using flag variables in event handler callbacks
+
+
+
+
+&nbsp;
+### 11 - Custom Video Player
+
+* controls: two range type (slider) inputs for volume and playback rate
+* translateY transform to show/hide the controls
+* event listeners and functions
+* range events: change, mousemove
+* video properties: paused, duration, currentTime
+* video events: play, pause, timeupdate
+* use offsetX and offsetWidth in an element with position relative 
