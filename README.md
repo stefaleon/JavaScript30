@@ -116,3 +116,15 @@
 * video properties: paused, duration, currentTime
 * video events: play, pause, timeupdate
 * use offsetX and offsetWidth in an element with position relative 
+
+
+
+
+&nbsp;
+### 12 - Key Sequence Detection
+
+* keylogger
+* KONAMI code
+* array splice
+* array equality checking
+* cornify

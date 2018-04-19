@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Key Detection</title>
+  <script type="text/javascript" src="http://www.cornify.com/js/cornify.js"></script>
+</head>
+<body>
+<script>
+  const pressed = [];
+  // string code
+  // const secretCodeString = 'asdf';
+  // array code (for KONAMI)
+  // const secretCodeArray = ["ArrowLeft", "ArrowRight", "ArrowLeft", "ArrowRight"];
+  const secretCodeArray = [ "ArrowUp", "ArrowUp", "ArrowDown", "ArrowDown", "ArrowLeft", "ArrowRight", "ArrowLeft", "ArrowRight", "b", "a", "Enter"];
+
+  window.addEventListener('keyup', (e) => {
+    console.log(e.key);    
+    pressed.push(e.key);
+    // pressed.splice( -secretCodeString.Length - 1, pressed.length - secretCodeString.length);
+    pressed.splice( -secretCodeArray.Length - 1, pressed.length - secretCodeArray.length);
+    console.log(pressed);
+    // if (pressed.join('').includes(secretCodeString)) {
+    if (arraysEqual(secretCodeArray, pressed)) {
+      console.log('DING DING!');
+      cornify_add();
+    }
+  });
+
+  function arraysEqual(a, b) {
+  if (a === b) return true;
+  if (a == null || b == null) return false;
+  if (a.length != b.length) return false;
+
+  // If you don't care about the order of the elements inside
+  // the array, you should sort both arrays here.
+
+  for (var i = 0; i < a.length; ++i) {
+    if (a[i] !== b[i]) return false;
+  }
+  return true;
+}
+
+</script>
+</body>
+</html>
