@@ -128,3 +128,15 @@
 * array splice
 * array equality checking
 * cornify
+
+
+
+
+&nbsp;
+### 13 - Slide in on Scroll 
+
+* scroll event
+* transform
+* debounce
+* window properties: scrollY, innerHeight
+* image properties: height, offsetTop
