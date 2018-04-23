@@ -140,3 +140,16 @@
 * debounce
 * window properties: scrollY, innerHeight
 * image properties: height, offsetTop
+
+
+
+
+&nbsp;
+### 14 - JavaScript References VS Copying
+
+* copy vs reference
+* primitives make copies
+* arrays and objects make references
+* array copy: slice, concat, spread, from
+* object shallow copy: assign, spread
+* object deep copy: JSON.parse(JSON.stringify(obj))
