@@ -153,3 +153,13 @@
 * array copy: slice, concat, spread, from
 * object shallow copy: assign, spread
 * object deep copy: JSON.parse(JSON.stringify(obj))
+
+
+
+
+&nbsp;
+### 15 - LocalStorage
+
+* Populate a list with indexed list items
+* Use the local storage to maintain state
+* Use event delegation to select dynamically created elements
