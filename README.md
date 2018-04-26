@@ -163,3 +163,13 @@
 * Populate a list with indexed list items
 * Use the local storage to maintain state
 * Use event delegation to select dynamically created elements
+
+
+
+
+&nbsp;
+### 16 - Mouse Move Shadow
+
+* Mousemove event
+* Destructuring
+* offsetWidth, offsetHeight, offsetX, offsetY.offsetLeft, offsetTop
